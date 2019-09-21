@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Asap', sans-serif;
+    src: url(./assets/fonts/Asap-Regular.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+
+/* HEADR */
+header {
+    width: 100%;
+    max-width: 1300px;
+    height: 566px;
+    margin: 0 auto;
+    background: url("./assets/images/bg-slider.png") center no-repeat;
+    background-size: cover;
+    padding-top: 28px;
+    
+} 
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo p {
+    font-size: 41px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+}
+
+.nav {
+    width: 453px;
+    height: 41px;
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP", "Times New Roman";
+    text-align: center;
+    transition: color .1s linear;
+
+}
+
+.nav-link img {
+    margin-top: 10px;
+}
+
+
+/* SLIDER */
+ .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 330px;
+    width: 100%;
+    margin-top: 57px;
+    padding-left: 10px;
+}
+
+.slider-video {
+    /* background-color: rgb(255, 0, 0); */
+    width: 549px;
+    height: 100%;
+}
+
+.slider-video video {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-text {
+    text-transform: uppercase;
+    font-size:40px;
+    letter-spacing: 1px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#slider-text-up {
+    color: #f5c506;
+}
+
+#slider-text-down {
+    color: #fff;
+}
