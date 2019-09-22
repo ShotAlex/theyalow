@@ -27,12 +27,11 @@ h3 {
 header {
     width: 100%;
     max-width: 1300px;
-    height: 566px;
+    height: 540px;
     margin: 0 auto;
     background: url("./assets/images/bg-slider.png") center no-repeat;
     background-size: cover;
     padding-top: 28px;
-    
 } 
 
 .header-inner {
@@ -48,6 +47,7 @@ header {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    margin: 12px 0 0 4px;
 }
 
 .header-logo p {
@@ -115,10 +115,10 @@ header {
 .slider-text {
     text-transform: uppercase;
     font-size:40px;
-    letter-spacing: 1px;
     font-family: 'Asap', sans-serif;
     font-weight: 400;
     text-align: center;
+    padding: 5px 35px 30px 0;
 }
 
 #slider-text-up {
@@ -126,5 +126,34 @@ header {
 }
 
 #slider-text-down {
+    margin-top: 10px;
     color: #fff;
+}
+
+/* ADVANTAGES */
+.advantages {
+    width: 100%;
+    max-width: 1300px;
+    height: 212px;
+    margin: 0 auto;
+    background: url("./assets/images/advantages-bg.png");
+}
+
+.advantages-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    text-align:center;
+    align-items: flex-end;
+}
+
+.advantages-block p {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
 }
