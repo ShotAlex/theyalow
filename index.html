@@ -12,7 +12,7 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-inner">
                 <div class="header-logo">
@@ -21,16 +21,22 @@
                 </div>
 
                 <nav class="nav">
-                    <a class="nav-link" href="#"><img src="./assets/images/menu-aboutus.png" alt=""> About Us</a>
-                    <a class="nav-link" href="#"><img src="./assets/images/menu-services.png" alt=""> Services</a>
-                    <a class="nav-link" href="#"><img src="./assets/images/menu-contact.png" alt=""> Contacts</a>
+                    <a class="nav-link" href="#">
+                        <img src="./assets/images/menu-aboutus.png" alt=""> About Us
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="./assets/images/menu-services.png" alt=""> Services
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="./assets/images/menu-contact.png" alt=""> Contacts
+                    </a>
                 </nav>
             </div>
 
 
             <div class="slider">
                 <div class="slider-video">
-                    <video width="100%" height="100%" controls>
+                    <video width="100%" height="100%" controls poster="./assets/images/slider-placeholder.png">
                         <source src="hhttps://youtu.be/6oGqIfnIAEA" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -63,6 +69,37 @@
             </div>
         </div>
     </section>
+
+    <article class="news">
+        <div class="container">
+            <div class="news-inner">
+                <div class="news-text">Lorem ipsum dolor sit amet</div>
+
+                <div class="news-block">
+                    <div id="news-block-inner-text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                    </div>
+                    <div id="news-block-inner-video">
+                        <video width="315" height="233" controls poster="assets/images/new-video-placwholder.png">
+                            <source src="hhttps://youtu.be/6oGqIfnIAEA" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id="news-block-inner-twitter">
+                        <img src="./assets/images/news-block-inner-twit.png" alt="twitter">
+                    </div>
+                </div>
+                <div class="mews-smallblock-data">
+                    <h4>25</h4>
+                    <p>april</p>
+                </div>
+
+                <div class="news-snake"></div>
+            </div>
+        </div>
+    </article>
+
+
 
 
 </body>

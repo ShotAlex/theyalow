@@ -10,7 +10,10 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -23,11 +26,12 @@ h3 {
 }
 
 
+
 /* HEADR */
-header {
+.header {
     width: 100%;
     max-width: 1300px;
-    height: 540px;
+    height: 538px;
     margin: 0 auto;
     background: url("./assets/images/bg-slider.png") center no-repeat;
     background-size: cover;
@@ -48,6 +52,17 @@ header {
     display: flex;
     align-items: center;
     margin: 12px 0 0 4px;
+    position: relative;
+}
+
+.header-logo:before {
+    content: '';
+    position: absolute;
+    background-image: url('./assets/images/logo.png');
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+    left: 2px;
 }
 
 .header-logo p {
@@ -69,6 +84,33 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-top: 35px;
+    position: relative;
+    z-index: 5;
+    margin-bottom: -15px;
+}
+
+.nav:before {
+    content: "";
+    position: absolute;
+    width: 453px;
+    height: 41px;
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    opacity: 0.27058823529411763;
+    top: -8px;
+    left: -8px;
+    z-index: 3;
+}
+
+.nav:after {
+    content: "";
+    position: absolute;
+    width: 453px;
+    height: 41px;
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    opacity: 0.27058823529411763;
+    top: -4px;
+    left: -4px;
+    z-index: 4;
 }
 
 .nav-link {
@@ -102,9 +144,12 @@ header {
 }
 
 .slider-video {
-    /* background-color: rgb(255, 0, 0); */
     width: 549px;
     height: 100%;
+}
+
+video{
+    object-fit: cover;
 }
 
 .slider-video video {
@@ -130,6 +175,7 @@ header {
     color: #fff;
 }
 
+
 /* ADVANTAGES */
 .advantages {
     width: 100%;
@@ -149,11 +195,131 @@ header {
     align-items: flex-end;
 }
 
-.advantages-block p {
+.advantages-block {
     text-transform: uppercase;
     font-size: 27px;
     color: #000000;
     font-family: "Segoe UI";
     font-weight: 300;
     text-align: center;
+}
+
+
+
+/* NEWS */
+.news {
+    width: 100%;
+    max-width: 1300px;
+    height: 475px;
+    margin: 0 auto;
+    background: url("./assets/images/news-bg.png");
+    padding-top: 33px;
+}
+
+.news-text {
+    text-transform: uppercase;
+    font-size: 37px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.news-block {
+    height: 233px;
+    margin-top: 30px;
+    width: 100%;
+    display: inline-flex;
+}
+
+#news-block-inner-text{
+    width: 270px;
+    height: 182px;
+    background: #EC9E03;
+    padding: 17px 38px 34px 31px;
+    font-size: 29px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    position: relative;
+} 
+
+#news-block-inner-video {
+    width: 315px;
+    height: 233px;
+}
+
+#news-block-inner-twitter {
+    width: 329px;
+    height: 233px;
+    background: #EC9E03;
+    font-family: "Lucida Sans";
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    position: relative;
+}
+
+#news-block-inner-twitter:before {
+    content: '22';
+    font-size: 24px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+}
+
+#news-block-inner-text:after,
+#news-block-inner-twitter:after {
+    content: '';
+    background-image: url("./assets/images/after-plus.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+    font-weight: 40;
+}
+
+.mews-smallblock-data {
+    height: 88px;
+    width: 112px;
+    background-color: #ddb101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mews-smallblock-data h4 {
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.mews-smallblock-data p {
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+}
+
+.news-snake {
+    background-color: #fff;
+    width: 100%;
+    height: 16px;
 }
