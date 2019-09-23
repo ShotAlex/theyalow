@@ -33,7 +33,7 @@ h6 {
     max-width: 1300px;
     height: 538px;
     margin: 0 auto;
-    background: url("./assets/images/bg-slider.png") center no-repeat;
+    background: url("./assets/images/header-bg.png") center no-repeat;
     background-size: cover;
     padding-top: 28px;
 } 
@@ -319,7 +319,165 @@ video{
 }
 
 .news-snake {
-    background-color: #fff;
     width: 100%;
     height: 16px;
+    text-align: center;
 }
+
+#myRange {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 896px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    outline: none; 
+    opacity: 0.55; 
+    transition: opacity .2s;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#myRange:hover {
+    opacity: 1; 
+}
+
+#myRange::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 197px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #ec9e03;
+    cursor: pointer; /* Cursor on hover */
+}
+
+
+/* SERVICES */
+
+.services {
+    width: 100%;
+    max-width: 1300px;
+    height: 538px;
+    margin: 0 auto;
+    background: url("./assets/images/services-bg.png") center no-repeat;
+    background-size: cover;
+    padding-top: 38px;
+}
+
+.services-text {
+    text-align: center;
+}
+
+.services-text h1 {
+    text-transform: uppercase;
+    font-size: 43px;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.services-image {
+    position: relative;
+}
+
+.services-image::before {
+    content: "IT'S 100% FREE";
+    position: absolute;
+    display: block;
+    width: 117px;
+    height: 117px;
+    border-radius: 100%;
+    background: #F5C506;
+    top: -43px;
+    left: -20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    line-height: 110px;
+    }
+
+
+.services-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding-left: 18px;
+}
+
+.services-item  {
+    list-style: none;
+    width: 345px;
+    padding: 0;
+    margin: 20px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+.services-advantages {
+    margin-top: 6px;
+    margin-left: 75px;
+}
+
+ol {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    counter-reset: list;
+}
+
+.services-item::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #f5c506;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    max-width: 1300px;
+    height: 64px;
+    background-color: #4C4C4C;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-inner p {
+    font-size: 29px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    line-height: 2;
+}
+
+/* 
+TO DO:
+add shadow 
+poster at video 
+ol>li 
+monitor :: ::after
+footer
+nav cursor */
