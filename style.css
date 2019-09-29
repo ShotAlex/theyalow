@@ -75,7 +75,7 @@ h6 {
     width: 80px;
     height: 80px;
     opacity: 0.5;
-    left: 2px;
+    left: 14px;
 }
 
 .header-logo img {
@@ -593,7 +593,6 @@ ol {
 
 
     .header-logo::before {
-
         background-size: cover;
         width: 39px;
         height: 39px;
@@ -840,8 +839,3 @@ ol {
         margin: auto 0;
     }
 }
-
-
-/* 
-news video width
-*/
